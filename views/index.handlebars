@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Eat Da Burger</h1>
+            <br>
+            <img style="height:200px;width:300px" src="https://cdn.shortpixel.ai/client/q_lossy,ret_img/https://syrupandbiscuits.com/wp-content/uploads/2011/08/IMG_6693.jpg">
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div id="toEat" class="col-md-6 text-center">
+            <h2 class="text-center"><u> Ready to be Devoured</u></h2>
+            <br>
+            <br>
+                {{#each burgers}}
+                {{#unless devoured}}
+                <h3>{{burger_name}}
+                {{> burgers/burger-block eaten=true}}
+                {{/unless}}
+                {{/each}}</h3>
+        </div>
+        <div id="eaten" class="col-md-6 text-center">
+             <h2 class="text-center"><u>Devoured</u></h2>
+             <br>
+                {{#each burgers}}
+                {{#if devoured}}
+                <h3>{{burger_name}}</h3>
+                {{/if}}
+                {{/each}}
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2>Add a Burger</h2>
+            <form class="create-form">
+
+                <div class="form-group">
+                    <label for="ca"> Name:</label>
+                    <input type="text" id="ca" name="name">
+                </div>
+
+                <button id="submit" type="submit">Add Burger</button>
+            </form>
+        </div>
+    </div>
+</div>

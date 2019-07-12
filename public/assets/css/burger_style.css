@@ -1,0 +1,17 @@
+body {
+    background-color: lightgreen;
+}
+
+h1 {
+    font-size: 5em;
+    font-family: 'Barriecito', cursive;
+}
+
+img {
+    border-radius:10px;
+    border: solid darkgreen;
+}
+
+h2, h3 {
+    font-family: 'DM Serif Text', serif;
+}
